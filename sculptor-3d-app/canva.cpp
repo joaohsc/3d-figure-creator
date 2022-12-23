@@ -53,8 +53,7 @@ void Canva::paintEvent(QPaintEvent *e)
     gridH = (widthScreen - nc*tamCel)/2;
     gridV = (heightScreen - nl*tamCel)/2;
 
-    p.setPen(pen);
-    p.drawRect(rect());
+
 
     for(int i = 0; i < nl; i++){
         for(int j = 0; j < nc; j++){
