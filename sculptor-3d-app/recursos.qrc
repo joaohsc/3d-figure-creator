@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icones">
+        <file>esfera.png</file>
+        <file>baixar.png</file>
+        <file>caixa.png</file>
+        <file>elipse.png</file>
+        <file>xcaixa.png</file>
+        <file>Xelipse.png</file>
+        <file>Xesfera.png</file>
+        <file>xponto.png</file>
+        <file>ponto.png</file>
+        <file>apagar.png</file>
+        <file>add.png</file>
+        <file>sair.png</file>
+    </qresource>
+</RCC>

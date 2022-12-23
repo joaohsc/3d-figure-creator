@@ -1,0 +1,51 @@
+\hypertarget{canva_8h_source}{}\doxysection{canva.\+h}
+\mbox{\hyperlink{canva_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CANVA\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CANVA\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{sculptor_8h}{sculptor.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{14 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_canva}{Canva}} : \textcolor{keyword}{public} QWidget}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18     Q\_OBJECT}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{private}:}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} nl, nc;}
+\DoxyCodeLine{23     vector <vector<Voxel>> v;}
+\DoxyCodeLine{24     \textcolor{keywordtype}{int} gridV, gridH;}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int} tamCel;}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} widthScreen, heightScreen;}
+\DoxyCodeLine{27     \textcolor{keywordtype}{int} widthCel, heightCel;}
+\DoxyCodeLine{28     \textcolor{keywordtype}{bool} pressed;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{34     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_canva}{Canva}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_canva_a6da92e16b7e3785ecb611a0717d735be}{paintEvent}}(QPaintEvent *e);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_canva_ad0da32b031ee02bc5ffc02672b8c4914}{setSize}}(\textcolor{keywordtype}{int} \_nl, \textcolor{keywordtype}{int} \_nc);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_canva_a53a1260a755f90ad4ba41cf69ae9e5be}{mousePressEvent}}(QMouseEvent *event);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_canva_a59314912fce48d8a27457d08a9b829d8}{mouseMoveEvent}}(QMouseEvent *event);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_canva_aa2cb3eb33068d5f79fce53e9ff0fa15b}{mouseReleaseEvent}}(QMouseEvent *event);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_canva_acc2ecbcae119b72d0c351cae3e35079a}{imprimirFigura}}(vector <vector <Voxel> > m);}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 signals:}
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_canva_aac44252a98675b7b106818e153216787}{enviaPosicao}}(\textcolor{keywordtype}{int},\textcolor{keywordtype}{int});}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// CANVA\_H}}
+
+\end{DoxyCode}

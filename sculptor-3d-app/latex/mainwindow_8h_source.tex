@@ -1,0 +1,70 @@
+\hypertarget{mainwindow_8h_source}{}\doxysection{mainwindow.\+h}
+\mbox{\hyperlink{mainwindow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MAINWINDOW\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MAINWINDOW\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{sculptor_8h}{sculptor.h}}"{}}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QActionGroup>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{12 \textcolor{keyword}{enum}\{}
+\DoxyCodeLine{13     \mbox{\hyperlink{mainwindow_8h_a06fc87d81c62e9abb8790b6e5713c55bae5d289f4c3b1b59f02e1028751081cb0}{sphere}}, \mbox{\hyperlink{mainwindow_8h_a06fc87d81c62e9abb8790b6e5713c55ba735a95e6813e2f44f6a8d6476c421c68}{voxel}}, \mbox{\hyperlink{mainwindow_8h_a06fc87d81c62e9abb8790b6e5713c55baaf5a8aab67ee6e53926c964aa9fc766e}{box}}, \mbox{\hyperlink{mainwindow_8h_a06fc87d81c62e9abb8790b6e5713c55bafdaf6583c2d090c7915a7cbfac8e0046}{ellipsoid}}, \mbox{\hyperlink{mainwindow_8h_a06fc87d81c62e9abb8790b6e5713c55bad76aed5f44491a428590fe6210a3aa15}{cVoxel}}, \mbox{\hyperlink{mainwindow_8h_a06fc87d81c62e9abb8790b6e5713c55ba448a4f825f65c5293bcb1cbdd2e37420}{cSphere}}, \mbox{\hyperlink{mainwindow_8h_a06fc87d81c62e9abb8790b6e5713c55ba060066e9f88818c2b172dffbc894ffc5}{cBox}}, \mbox{\hyperlink{mainwindow_8h_a06fc87d81c62e9abb8790b6e5713c55bad6decd2969a39036309261385b75878f}{cEllipsoid}}}
+\DoxyCodeLine{14 \};}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <QMainWindow>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{19 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_ui}{Ui}} \{ \textcolor{keyword}{class }\mbox{\hyperlink{class_main_window}{MainWindow}}; \}}
+\DoxyCodeLine{20 QT\_END\_NAMESPACE}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_main_window}{MainWindow}} : \textcolor{keyword}{public} QMainWindow}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     Q\_OBJECT}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_main_window}{MainWindow}}(QWidget *parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{private}:}
+\DoxyCodeLine{31     Ui::MainWindow *ui;}
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} dimX, dimY, dimZ;}
+\DoxyCodeLine{33     \textcolor{keywordtype}{int} r, g, b;}
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} figuraAtual;}
+\DoxyCodeLine{35     \textcolor{keywordtype}{void} updateColor();}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_sculptor}{Sculptor}} *escultor;}
+\DoxyCodeLine{37     QActionGroup *actionGroup;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a542a7527ced73b2c9bc14f8dc9661a66}{quit}}();}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_aca0e437971c3653a1a3bb888e6ace85f}{setRed}}(\textcolor{keywordtype}{int} \_r);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_ad4e79595d202d2b9b01b87e8cca6a92e}{setGreen}}(\textcolor{keywordtype}{int} \_g);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a90184ad2b00167fc4664dd55e32f705e}{setBlue}}(\textcolor{keywordtype}{int} \_b);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 }
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_aa4cfadb9484282443496322826d8d546}{draw3d}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a3c20a8eccea0614945b4a05d6dbae22e}{updateAxis}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_main_window_a243b57e03cac90140c7d474e117992e9}{apresentaDialogo}}();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \textcolor{keyword}{private} slots:}
+\DoxyCodeLine{80     \textcolor{keywordtype}{void} save();}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} putVoxel();}
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} putBox();}
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} putSphere();}
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} putEllipsoid();}
+\DoxyCodeLine{101     \textcolor{keywordtype}{void} cutVoxel();}
+\DoxyCodeLine{105     \textcolor{keywordtype}{void} cutBox();}
+\DoxyCodeLine{109     \textcolor{keywordtype}{void} cutSphere();}
+\DoxyCodeLine{113     \textcolor{keywordtype}{void} cutEllipsoid();}
+\DoxyCodeLine{117     \textcolor{keywordtype}{void} set\_Axis\_z(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{121     \textcolor{keywordtype}{void} limpar\_voxel();}
+\DoxyCodeLine{125     \textcolor{keywordtype}{void} set\_sliders\_numbers();}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127 \};}
+\DoxyCodeLine{128 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// MAINWINDOW\_H}}
+
+\end{DoxyCode}

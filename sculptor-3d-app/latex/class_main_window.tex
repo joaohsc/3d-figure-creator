@@ -1,0 +1,130 @@
+\hypertarget{class_main_window}{}\doxysection{Main\+Window Class Reference}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Inheritance diagram for Main\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a542a7527ced73b2c9bc14f8dc9661a66}{quit}} ()
+\begin{DoxyCompactList}\small\item\em slot que fecha a interface \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aca0e437971c3653a1a3bb888e6ace85f}{set\+Red}} (int \+\_\+r)
+\begin{DoxyCompactList}\small\item\em slot que define o valor da váriavel r que é a cor vermelha no formato rgb \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ad4e79595d202d2b9b01b87e8cca6a92e}{set\+Green}} (int \+\_\+g)
+\begin{DoxyCompactList}\small\item\em slot que define o valor da váriavel g que é a cor verde no formato rgb \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a90184ad2b00167fc4664dd55e32f705e}{set\+Blue}} (int \+\_\+b)
+\begin{DoxyCompactList}\small\item\em slot que define o valor da váriavel b que é a cor azul no formato rgb \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aa4cfadb9484282443496322826d8d546}{draw3d}} (int, int)
+\begin{DoxyCompactList}\small\item\em slot que únifica os métodos do sculptor e desenha a figura na tela \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a3c20a8eccea0614945b4a05d6dbae22e}{update\+Axis}} (int, int)
+\begin{DoxyCompactList}\small\item\em slot atualiza os eixos de x y nos componetes de LCD \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a243b57e03cac90140c7d474e117992e9}{apresenta\+Dialogo}} ()
+\begin{DoxyCompactList}\small\item\em slot responsável por apresentar o dialog que define as dimensões do grid na tela, além disso o slot atualiza o objeto do sculptor com as dimensões registrads pelo usuário \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_window_a243b57e03cac90140c7d474e117992e9}\label{class_main_window_a243b57e03cac90140c7d474e117992e9}} 
+\index{MainWindow@{MainWindow}!apresentaDialogo@{apresentaDialogo}}
+\index{apresentaDialogo@{apresentaDialogo}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{apresentaDialogo}{apresentaDialogo}}
+{\footnotesize\ttfamily void Main\+Window\+::apresenta\+Dialogo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+slot responsável por apresentar o dialog que define as dimensões do grid na tela, além disso o slot atualiza o objeto do sculptor com as dimensões registrads pelo usuário 
+
+\mbox{\Hypertarget{class_main_window_aa4cfadb9484282443496322826d8d546}\label{class_main_window_aa4cfadb9484282443496322826d8d546}} 
+\index{MainWindow@{MainWindow}!draw3d@{draw3d}}
+\index{draw3d@{draw3d}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{draw3d}{draw3d}}
+{\footnotesize\ttfamily void Main\+Window\+::draw3d (\begin{DoxyParamCaption}\item[{int}]{h\+Click,  }\item[{int}]{v\+Click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+slot que únifica os métodos do sculptor e desenha a figura na tela 
+
+\mbox{\Hypertarget{class_main_window_a542a7527ced73b2c9bc14f8dc9661a66}\label{class_main_window_a542a7527ced73b2c9bc14f8dc9661a66}} 
+\index{MainWindow@{MainWindow}!quit@{quit}}
+\index{quit@{quit}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{quit}{quit}}
+{\footnotesize\ttfamily void Main\+Window\+::quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+slot que fecha a interface 
+
+\mbox{\Hypertarget{class_main_window_a90184ad2b00167fc4664dd55e32f705e}\label{class_main_window_a90184ad2b00167fc4664dd55e32f705e}} 
+\index{MainWindow@{MainWindow}!setBlue@{setBlue}}
+\index{setBlue@{setBlue}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setBlue}{setBlue}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Blue (\begin{DoxyParamCaption}\item[{int}]{\+\_\+b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+slot que define o valor da váriavel b que é a cor azul no formato rgb 
+
+\mbox{\Hypertarget{class_main_window_ad4e79595d202d2b9b01b87e8cca6a92e}\label{class_main_window_ad4e79595d202d2b9b01b87e8cca6a92e}} 
+\index{MainWindow@{MainWindow}!setGreen@{setGreen}}
+\index{setGreen@{setGreen}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setGreen}{setGreen}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Green (\begin{DoxyParamCaption}\item[{int}]{\+\_\+g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+slot que define o valor da váriavel g que é a cor verde no formato rgb 
+
+\mbox{\Hypertarget{class_main_window_aca0e437971c3653a1a3bb888e6ace85f}\label{class_main_window_aca0e437971c3653a1a3bb888e6ace85f}} 
+\index{MainWindow@{MainWindow}!setRed@{setRed}}
+\index{setRed@{setRed}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setRed}{setRed}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Red (\begin{DoxyParamCaption}\item[{int}]{\+\_\+r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+slot que define o valor da váriavel r que é a cor vermelha no formato rgb 
+
+\mbox{\Hypertarget{class_main_window_a3c20a8eccea0614945b4a05d6dbae22e}\label{class_main_window_a3c20a8eccea0614945b4a05d6dbae22e}} 
+\index{MainWindow@{MainWindow}!updateAxis@{updateAxis}}
+\index{updateAxis@{updateAxis}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateAxis}{updateAxis}}
+{\footnotesize\ttfamily void Main\+Window\+::update\+Axis (\begin{DoxyParamCaption}\item[{int}]{h\+Click,  }\item[{int}]{v\+Click }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+slot atualiza os eixos de x y nos componetes de LCD 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}
